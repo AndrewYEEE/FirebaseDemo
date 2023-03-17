@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
+import Movie from './Movie';
 
 const Home = () => {
     const state = useSelector((state)=>{
@@ -13,6 +14,8 @@ const Home = () => {
                 ? <div>Hi {state.profile.name}</div>
                 : ""
             }
+            <br></br>
+            <Movie></Movie>
         </div>
     )
 };
